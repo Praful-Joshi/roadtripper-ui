@@ -24,9 +24,18 @@ export function OnboardingSlide({ slide, onNext, onSkip }: Props) {
       {/* Optional dark overlay for readability */}
       <div className="absolute inset-0 bg-black/60" />
 
+      {/* ===== Top bar (logo) ===== */}
+      <div className="absolute flex items-start">
+        <img
+          src="/images/brand-logo.png"
+          alt="Roadtripper"
+          className="h-34 drop-shadow-lg"
+        />
+      </div>
+
       {/* Content layer */}
       <div className="relative z-10 flex min-h-screen flex-col justify-end p-6">
-        <div className="space-y-3 max-w-xl">
+        <div className="space-y-3 ml-3 max-w-xl">
           <Text variant="heading">{slide.title}</Text>
 
           <Text variant="muted">{slide.description}</Text>
