@@ -30,7 +30,7 @@ export function OnboardingSlide({ slide, onNext, onSkip }: Props) {
       <div className="absolute inset-0 bg-black/60" />
 
       {/* ===== Top bar (logo) ===== */}
-      <div className="absolute flex items-start pl-8 pt-5">
+      <div className="absolute flex items-start pl-8 pt-6">
         <Text variant="brandName">{APP_NAME}</Text>
       </div>
 
